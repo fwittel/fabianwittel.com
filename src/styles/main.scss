@@ -1,0 +1,30 @@
+// 1. Your custom variables and variable overwrites.
+$text-color: #333;
+$global-link-color: #333;
+$base-body-font-family: 'Montserrat', sans-serif;
+$base-heading-font-family: 'Montserrat', sans-serif;
+// $base-heading-font-family: 'Archivo', sans-serif;
+// font-family: 'Montserrat', ;
+// font-family: 'Cardo', ;
+// font-family: 'Archivo', ;
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+
+// 4. Import UIkit.
+@import "uikit/src/scss/uikit-theme.scss";
+
+h1, h2 {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 42pt;
+}
+
+h2 {
+	font-size: 24pt;
+}
