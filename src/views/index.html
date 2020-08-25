@@ -7,44 +7,128 @@
 </head>
 <body>
 	<header>
-		<div uk-grid>
-			<div class="uk-width-3-4@m">
-				<img src="./img/fabianwittel.jpg" id="face" class="" style="height: 200px; width: 100%">
+		<div id="header-images" class="uk-clearfix">
+			<div id="face" class="uk-float-left">
+				<img>
+			</div>
+			<div id="logo" class="uk-float-right">
+				<img>
 			</div>
 		</div>
-		<div uk-grid>
-			<div class="uk-width-1-2@m">
-				<h1>Wittel Strategy<br>and Development</h1>
-				<p>Lorem Ipsum</p>
-				<a href="" uk-icon="icon: linkedin"></a>
-				<a href="" uk-icon="icon: mail"></a>
-			</div>
-			<div class="uk-width-1-4@m">
-				<img src="./img/logo.jpg" id="logo" class="" width="auto" height="100">
+		<div id="header-texts">
+			<div uk-grid>
+				<div class="uk-width-2-3@m">
+					<h2>Wittel Strategy & Development</h2>
+					<h1>Helping Individuals and Organizations Thrive in Complexity</h1>
+					<p>I’m here to help you and your organization adapt to new challenges and thrive in increasingly complex environ&shyments. There’s two ways I follow to do that for organizations: First, review and update routines, communications and architecture in <i>organizational development</i>. Second, raise the organization’s self-awareness with customized <i>data visualization</i>. On top, we can make new knowledge more actionable on an individual level by using a new kind of personal <i>knowledge graph</i>.</p>
+					<div uk-sticky="offset: 40, media: @m">
+						<h3>Contact</h3>
+						<a class="uk-icon-button" href="" uk-icon="icon: mail"></a>
+						<a class="uk-icon-button" href="" uk-icon="icon: linkedin"></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
-	<main uk-grid class="uk-child-width-1-4@m">
+	<main>
+		<!-- <div id="aside" uk-sticky="offset: 40">
+			<h2>Let's talk</h2>
+			<a class="uk-icon-button" href="" uk-icon="icon: mail"></a>
+			<a class="uk-icon-button" href="" uk-icon="icon: linkedin"></a>
+		</div> -->
 		<!-- (div>h2+p.leader+p)*3 -->
-		<div></div>
-		<div>
-			<h2>Lorem</h2>
-			<p class="leader"></p>
-			<p></p>
-		</div>
-		<div>
-			<h2>Ipsum</h2>
-			<p class="leader"></p>
-			<p></p>
-		</div>
-		<div>
-			<h2>Dolor</h2>
-			<p class="leader"></p>
-			<p></p>
+		<div id="main-columns" uk-grid class="uk-child-width-1-3@m">
+			<div>
+				<h2>Organizational Development</h2>
+				<div class="leader">
+					<p>
+						Organizations need qualities of a living organism to be useful and make a profit in an ever-changing world. We can start with doing a complete health check: are the organization’s feedback loops closed, is it well-connected to customers needs? Then, not to waste resources, are repetitive processes clearly defined, streamlined and as automated as reasonable? If we need AI, I’m working with appliedAI, a TUM gGmbH. Only when the basics are solid we go on to optionality: does the organization have a stringent and continuous system to develop business opportunities? We’re building those steps on tools already used in your organization, supplemented with modules to fill possible gaps. To add a broad background to my experience I’m doing my projects in sparring or cooperation with berylls or EquWin.
+						Even if we’re starting small (for example establishing a system that self-enforces clear responsibilities) I’ll put a focus on the inherent design principles of your organization. Only by putting them first the whole system will self-improve even further in the long run.
+					</p>
+				</div>
+				<div id="more-1">
+					<p>
+						Previous projects:
+						<ul>
+							<li>Strategy process for plant leaders in a big automobile producer</li>
+							<li>Process refinement and responsibility mapping for digital platform startup</li>
+							<li>Board moderation and development in big automobile producer</li>
+							<li>Transformation from yearly process to continuous portfolio adaption in worldwide production network</li>
+							<li>Implementation of training certification for service technicians in machining world market leader</li>
+						</ul>
+					</p>
+					<p>
+						Tools I use:
+						<ul>
+							<li>Leadership workshops (organized over 300 workshops by now from two to 300 participants)</li>
+							<li>Analysis of organizational datasets</li>
+							<li>Surveys (online/offline; live and delayed)</li>
+							<li>Tribal grassroot movements</li>
+						</ul>
+					</p>
+					<p>
+						Outlook: if complexity increases further, centralized strategy gets weakened further in its ability to align actions and identify people with a common cause. Therefore we’ve set up Navigate by Fiction, a strategy process to make effective cooperation emerge in a hypercomplex world.
+					</p>					
+				</div>
+				<button type="button" uk-toggle="target: #more-1; animation: uk-animation-slide-top, uk-animation-fade" class="uk-button uk-button-default uk-button-small">Show more</button>
+			</div>
+			<div>
+				<h2>Data<br>Visualization</h2>
+				<div class="leader">
+					<p>
+						All <span class="marker">organizational success is built on previous learning</span>. True learning needs on a clear connection between action and effect, the feedback delay being critical for learning effectiveness. In many processes those connections are not explicit or hampered by manual data collection. Selecting the right results and indicators for your core processes; auto&shymating data parsing and visualization add motivation and set your organization up for self-improvement. Apart from that you’re saving manual work in generation of repetitive reports of course.
+					</p>
+				</div>
+				<ul uk-accordion>
+					<li>
+						<a class="uk-accordion-title" href="#">Show more</a>
+						<div class="uk-accordion-content">
+							<p>
+								Another aspect I like to use visualizations for is providing the big picture, the organization’s health to each and every employee interested. In times of high volatility and implicitly more decisions, the context of everyone’s own decisions gets more important to know. When creating data visualizations I work directly with the prospect users, integrate them in a design thinking process to evaluate the visualizations’ effect as early as possible. The visualizations are as minimalistic as possible, only showing the most crucial metrics, allowing to dig deeper only if necessary. 
+							</p>
+							<p>
+								Tools I use:
+								<ul>
+									<li>JavaScript and d3.js to build visualizations that run in every web browser</li>
+									<li>RawGraphs or Tableau to build prototypes</li>
+									<li>Python for data cleaning</li>
+								</ul>
+							</p>
+							<p>
+								Selected projects:
+								Preview-Image that opens lightbox with slideshow with each target, vision, solution, iteration
+								- isquare team lead
+								- ta sankey
+								- intuify
+								- festo?
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Knowledge<br>Graph</h2>
+				<p class="leader">This is my most advanced field of action, maybe the synergy of all projects I did. The selling proposition is easy, however there’s a story behind.
+Own reading to practice
+Managers reading and talking to practice
+Make a joy connecting…
+kleine Vorschau in vertikalem Slot. (Weniger Text; geführte Tour)
+I started this project with a friend in 2019, building on the … (ify-Text)
+</p>
+				<p>Screenshot of new UI and link</p>
+			</div>
 		</div>
 	</main>
-	<footer>
-		Impressum
+	<footer class="uk-clearfix">
+		<span class="uk-float-left">Fabian Wittel, Friedenheimer Brücke 19 in 80639 München, <a href="mailto:mail@fabianwittel.com">mail@fabianwittel.com</a></span>
 	</footer>
+	<div uk-modal id="modal-cookies">
+		<div class="uk-modal-dialog uk-modal-body uk-position-bottom uk-width-1-1 ">
+			<button type="button" class="uk-alert-close" uk-close></button>
+			<h2>Your Data</h2>
+			<p>No cookies here - you can keep your data ;)</p>
+			<button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+		</div>
+	</div>
 </body>
 </html>

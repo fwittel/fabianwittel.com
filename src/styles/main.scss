@@ -1,8 +1,11 @@
 // 1. Your custom variables and variable overwrites.
 $text-color: #333;
-$global-link-color: #333;
+$global-link-color: $text-color;
+$mild-color: #666;
+$active-link: #03ac13;
 $base-body-font-family: 'Montserrat', sans-serif;
 $base-heading-font-family: 'Montserrat', sans-serif;
+$breakpoint-m: 959px;
 // $base-heading-font-family: 'Archivo', sans-serif;
 // font-family: 'Montserrat', ;
 // font-family: 'Cardo', ;
@@ -17,14 +20,198 @@ $base-heading-font-family: 'Montserrat', sans-serif;
 // 4. Import UIkit.
 @import "uikit/src/scss/uikit-theme.scss";
 
-h1, h2 {
+body {
+   padding: 0;
+   background-image: url('../img/cream-paper.jpg');
+   background-size: 119px 108px;
+}
+
+@media (min-width: 1120px) {
+   
+   header, main, footer, aside {
+      max-width: 1080px;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+   }
+
+}
+
+@media (max-width: 1080px) {
+   
+   #header-texts, main, footer, aside {
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+
+}
+
+@media (max-width: $breakpoint-m) {
+   
+   #header-texts, main, footer, aside {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+}
+
+@media (max-width: 620px) {
+   
+   #header-texts, main, footer, aside {
+      margin-left: 10px;
+      margin-right: 10px;
+   }
+
+}
+
+main, footer {
+   margin-top: 6em;
+}
+
+aside {
+   margin-top: -200px;
+}
+
+#aside h2 {
+   // text-align: right;
+   margin-bottom: 5px;
+   width: 72px;
+   color: $mild-color;
+}
+
+
+footer {
+   border-top: .7px solid $mild-color;
+   margin-top: 100px;
+   padding: .3em .3em 100px .3em;
+   text-transform: uppercase;
+   // background: $mild-color;
+   // color: #ddd;
+   font-size: 12px;
+}
+
+@media (min-width: $breakpoint-m) {
+   
+   #header-texts, #main-columns {
+      padding-left: 120px;
+   }
+
+   .uk-sticky {
+      transform: translate(0, 0);
+      transition: transform .5s;
+   }
+
+   .uk-sticky-fixed {
+      transform: translate(-120px, 0px);
+      transition: transform .5s;
+      // border-right: .7px solid $text-color;
+   }
+
+}
+
+@media (max-width: $breakpoint-m) {
+   .uk-sticky-fixed {
+      visibility: hidden;
+   }
+}
+
+#header-texts h2 {
+   color: $mild-color;
+}
+
+#face img {
+   object-fit: cover;
+   @media (min-width: $breakpoint-m) {
+      object-position: top;
+   }
+   object-position: 30% 0%;
+   height: 320px;
+   width: 100%;
+}
+
+#logo img {
+   @media (min-width: $breakpoint-m) {
+      width: 200px;
+      margin-right: 60px;
+      margin-top: -110px;
+   }
+   width: 120px;
+   margin-top: -70px;
+   margin-right: 10px;
+}
+
+h1, h2, h3 {
 	text-transform: uppercase;
+   letter-spacing: .1em;
 }
 
 h1 {
-	font-size: 42pt;
+   @media (min-width: $breakpoint-m) {
+      font-size: 28pt;
+   }
+	font-size: 22pt;
+   margin-top: 20px;
 }
 
 h2 {
-	font-size: 24pt;
+   @media (min-width: $breakpoint-m) {
+      font-size: 18pt;
+      margin-right: 0;
+   }
+   margin-right: 140px;
+	font-size: 14pt;
+}
+
+h3 {
+   font-size: 14px;
+   color: $mild-color;
+   margin: .2em 0;
+}
+
+p, li {
+   font-size: 14px;
+   text-color: $text-color;
+}
+
+p{
+   text-align: justify;
+}
+
+a, a:visited {
+   color: inherit;
+}
+
+a:hover, a:active {
+   color: $active-link;
+}
+
+.uk-accordion-title {
+   font-size: 14px;
+}
+
+.marker {
+   font-weight: 1000;
+   color: $text-color;
+}
+
+#modal-cookies, #modal-cookies p {
+   text-align: center;
+}
+
+.uk-icon-button, .uk-icon-button:active, .uk-active > .uk-icon-button {
+   color: $mild-color;
+   background-color: none;
+   background: none;
+   box-shadow: 0 0 0 .7pt $mild-color;
+}
+
+.uk-icon-button:hover {
+   background-color: $active-link;
+   color: white;
+}
+
+.uk-button-default:hover {
+   border-color: $active-link;
+   color: $active-link;
 }
