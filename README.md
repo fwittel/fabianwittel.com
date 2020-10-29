@@ -1,2 +1,2 @@
 # fabianwittel.com
-Homepage for Fabian Wittel
+Homepage for Fabian Wittel.
